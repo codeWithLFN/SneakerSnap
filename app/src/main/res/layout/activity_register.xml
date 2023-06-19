@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btn_arrowleft2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:padding="16dp"
+        android:src="@drawable/img_arrowleft" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_arrowleft2"
+        android:layout_marginTop="-3dp"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_arrowleft2"
+        android:layout_marginTop="114dp"
+        android:gravity="center"
+        android:text="Enter Your Username &amp; Password"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/registerUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_arrowleft2"
+        android:layout_marginTop="217dp"
+        android:hint="Create Username"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerUsername"
+        android:layout_marginTop="102dp"
+        android:hint="Create Password"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRegister1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPassword"
+        android:layout_marginTop="91dp"
+        android:text="Register"
+        android:textSize="20sp"
+        tools:ignore="VisualLintButtonSize" />
+
+</RelativeLayout>

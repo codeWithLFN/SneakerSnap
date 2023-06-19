@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "72845194830",
+    "project_id": "sneakersnap-7bbe1",
+    "storage_bucket": "sneakersnap-7bbe1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72845194830:android:56d0bdf619cbc99ef7b51f",
+        "android_client_info": {
+          "package_name": "com.example.sneakersnap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72845194830-pt4ue6j3u1vl8etkcop48hsksorjsjji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGocyPVSuq1DFDVkB6it0PCOpXAF4Vg3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72845194830-pt4ue6j3u1vl8etkcop48hsksorjsjji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

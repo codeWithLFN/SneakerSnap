@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sneaker_brand">
+        <item>Nike</item>
+        <item>Adidas</item>
+        <item>Jordan</item>
+        <item>Yeezy</item>
+        <item>New Balance</item>
+        <item>Asics</item>
+        <item>Puma</item>
+        <item>Reebok</item>
+        <item>Vans</item>
+        <item>Converse</item>
+        <item>Other</item>
+    </string-array>
+</resources>

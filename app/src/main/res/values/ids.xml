@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textSneakerGoalProgress" type="id" />
+    <item name="progressSneakerGoal" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="btnSetGoal" type="id" />
+    <item name="textProgressPercentage" type="id" />
+    <item name="editGoal" type="id" />
+    <item name="textGoalMessage" type="id" />
+</resources>

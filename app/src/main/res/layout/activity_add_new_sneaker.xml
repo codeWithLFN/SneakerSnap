@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddNewSneaker">
+
+    <ImageButton
+        android:id="@+id/btn_arrowleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:padding="16dp"
+        android:src="@drawable/img_arrowleft" />
+
+    <TextView
+        android:id="@+id/tvAddNewSneaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Sneaker"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center_horizontal" />
+
+
+    <TextView
+        android:id="@+id/tvSneakerName"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="269dp"
+        android:text="Sneaker Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSneakerName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="97dp"
+        android:hint="Enter Sneaker Name"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/tvSneakerPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etSneakerName"
+        android:layout_marginBottom="-38dp"
+        android:text="Sneaker Price"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSneakerPrice"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSneakerSize"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="21dp"
+        android:hint="Enter Sneaker Price"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/tvSneakerSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddImage"
+        android:layout_marginBottom="176dp"
+        android:text="Sneaker Size"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSneakerSize"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="274dp"
+        android:hint="Enter Sneaker Size"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/tvSneakerBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerSneakerBrand"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="Sneaker Brand"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerSneakerBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCamera"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="48dp"
+        android:entries="@array/sneaker_brand"
+        android:hint="Sneaker Brand"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+
+    <TextView
+        android:id="@+id/tvAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCamera"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Image"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="86dp"
+        android:layout_above="@+id/btnAddSneaker"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="22dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_placeholder" />
+
+    <Button
+        android:id="@+id/btnAddSneaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="28dp"
+        android:text="Add Sneaker" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="23dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/btnAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="22dp"
+        android:text="Add" />
+
+</RelativeLayout>
+

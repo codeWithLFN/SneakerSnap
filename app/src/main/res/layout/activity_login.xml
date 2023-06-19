@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="146dp"
+        android:text="Welcome Back!"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEnterCredentials"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_marginTop="69dp"
+        android:text="Enter Your Username &amp; Password"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/loginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginPassword"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="45dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="386dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/btnLogin"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:autofillHints="password" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="392dp"
+        android:layout_height="67dp"
+        android:layout_above="@+id/tvNoAccount"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:text="Login"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvNoAccount"
+        android:layout_width="221dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="43dp"
+        android:text="Don't have an account?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="365dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="31dp"
+        android:text="Register"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+

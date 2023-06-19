@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="279dp"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="386dp"
+        android:layout_height="57dp"
+        android:layout_above="@+id/tvChangePassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="30dp"
+        android:text="Username: [PLACEHOLDER_USERNAME]"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etCurrentPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="21dp"
+        android:text="Change Password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etCurrentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etNewPassword"
+        android:layout_marginBottom="19dp"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnChangePassword"
+        android:layout_marginBottom="22dp"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDeleteAccount"
+        android:layout_marginBottom="25dp"
+        android:text="Change Password" />
+
+    <!-- Delete Account Section -->
+
+    <TextView
+        android:id="@+id/tvDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etDeleteAccountPassword"
+        android:layout_marginBottom="35dp"
+        android:text="Delete Account"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etDeleteAccountPassword"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:layout_above="@+id/btnDeleteAccount"
+        android:layout_marginBottom="29dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogout"
+        android:layout_marginBottom="20dp"
+        android:text="Delete Account" />
+
+    <!-- Logout Button -->
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="Logout" />
+
+    <!-- Navigation Bar -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>
+
