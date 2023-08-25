@@ -10,6 +10,7 @@
 # Team Members
 * Thato Ndlovu
 * Lufuno Nemudzivhadi
+* Bennet Rampisa
 
 
 # Contributing
