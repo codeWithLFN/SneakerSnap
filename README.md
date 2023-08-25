@@ -7,6 +7,9 @@
 * See progress
 * Profile page with delete account, change password, and sign out options
 
+#Team members
+
+
 # Contributing
 This project is open source and welcomes contributions. If you would like to contribute, please fork the repo and submit a pull request.
 
