@@ -7,7 +7,9 @@
 * See progress
 * Profile page with delete account, change password, and sign out options
 
-#Team members
+# Team members
+* Thato Ndlovu
+* Lufuno Nemudzivhadi
 
 
 # Contributing
